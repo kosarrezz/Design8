@@ -5,8 +5,13 @@ import CoursesSlider from "./components/Courses/CoursesSlider";
 import TopInstructors from "./components/TopInstructors";
 import WhyUsSection from "./components/WhyUsSection";
 import RoadmapSection from "./components/RoadmapSection";
-import BestCoursesSection from "./components/BestCoursesSection";
+import BestCoursesSection from "./components/BestCoursesSection/BestCoursesSection";
 import PopularCategories from "./components/PopularCategories";
+import { StudentCardFreeIcons } from "@hugeicons/core-free-icons";
+import StudentReviewsSection from "./components/StudentReviewsSection";
+import LatestNewsSection from "./components/LatestNewsSection";
+import Footer from "./Footer";
+
 
 function App() {
   return (
@@ -19,6 +24,9 @@ function App() {
       <RoadmapSection />
       <BestCoursesSection />
       <PopularCategories />
+      <StudentReviewsSection />
+        <LatestNewsSection />
+    <Footer />
     </div>
     
   );
