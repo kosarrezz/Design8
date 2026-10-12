@@ -4,7 +4,7 @@ import logoPart2 from "../../assets/Untitled-1 4.svg";
 import { Moon, Sun, X } from "lucide-react";
 
 const navLinks = [
-  { id: 1, title: "صفحه اصلی", href: "#" },
+  { id: 1, title: "خانه", href: "#" },
   { id: 2, title: "دوره ها", href: "#courses" },
   { id: 3, title: "اساتید", href: "#teachers" },
   { id: 4, title: "اخبار و مقالات", href: "#articles" },
@@ -50,7 +50,7 @@ function Navbar() {
           <img src={logoPart2} alt="لوگو" className="h-7 sm:h-8 w-auto shrink-0" />
           <img
             src={logoPart1}
-            alt="آکادمی کد نویسی برتر"
+            alt="آکادمی کد نویسی بحر"
             className="hidden lg:block h-8 w-auto shrink-0"
           />
         </div>
@@ -73,13 +73,13 @@ function Navbar() {
           <button
             type="button"
             onClick={toggleDarkMode}
-            className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+            className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
             aria-label="تغییر تم"
           >
             {isDark ? (
-              <Sun className="w-5 h-5 text-amber-400" />
+              <Sun className="w-5 h-5 text-white" />
             ) : (
-              <Moon className="w-5 h-5 text-gray-800 dark:text-gray-200" />
+              <Moon className="w-5 h-5 text-gray-700" />
             )}
           </button>
 
@@ -122,15 +122,9 @@ function Navbar() {
             ))}
           </ul>
 
-          <div className="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
-            <span className="text-xs text-gray-500 dark:text-gray-400">حالت شب / روز</span>
-            <button
-              type="button"
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200"
-            >
-              {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4" />}
-            </button>
+          <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-center gap-2">
+            <img src={logoPart2} alt="لوگوی آیکون بحر" className="h-7 w-auto" />
+            <img src={logoPart1} alt="لوگوی آکادمی بحر" className="h-7 w-auto" />
           </div>
         </div>
       )}
