@@ -46,7 +46,6 @@ function Navbar() {
     <header className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg shadow-gray-200/50 dark:shadow-none mx-2 sm:mx-4 mt-3 px-3 sm:px-5 lg:px-8 py-2 transition-colors">
       <div className="max-w-[1320px] h-[52px] sm:h-[60px] mx-auto flex items-center justify-between font-bold">
 
-        {/* بخش لوگو: اصلاح ترتیب و تراز‌بندی در جهت RTL */}
         <div className="flex items-center gap-3 shrink-0">
           <img
             src={logoPart1}
@@ -60,7 +59,6 @@ function Navbar() {
           />
         </div>
 
-        {/* منوی ناوبری */}
         <ul className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.id}>
@@ -74,7 +72,6 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* دکمه‌ها */}
         <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 shrink-0">
           
           <button
@@ -113,7 +110,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* منوی موبایل */}
       {isMenuOpen && (
         <div className="lg:hidden border-t border-gray-100 dark:border-gray-700 pt-4 pb-3 mt-2">
           <ul className="flex flex-col gap-3">
