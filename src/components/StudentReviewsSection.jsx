@@ -66,7 +66,6 @@ export default function StudentReviewsSection() {
     >
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-12">
         
-        {/* ستون متن و معرفی */}
         <div className="lg:w-5/12 w-full text-right select-none">
           <div className="flex items-center justify-between mb-4">
             <span className="text-[#0284C7] dark:text-[#38BDF8] text-[14px] font-bold">
@@ -124,7 +123,6 @@ export default function StudentReviewsSection() {
           </div>
         </div>
 
-        {/* اسلایدر نظرات */}
         <div className="lg:w-7/12 w-full">
           <Swiper
             onSwiper={(swiper) => {

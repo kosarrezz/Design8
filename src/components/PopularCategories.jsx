@@ -74,7 +74,6 @@ export default function PopularCategories() {
         </p>
       </div>
 
-      {/* نوارهای متحرک و مورب */}
       <div className="w-[120vw] -mr-[10vw] transform -rotate-[3deg] flex flex-col gap-4 py-4 select-none">
         <div className="flex flex-nowrap justify-center gap-4">
           {row1.map(renderItem)}

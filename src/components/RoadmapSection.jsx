@@ -58,7 +58,6 @@ export default function RoadmapSection() {
       className="w-full py-16 px-4 md:px-8 select-none bg-white dark:bg-[#212121] transition-colors duration-200"
     >
       <div className="max-w-[1240px] mx-auto cursor-pointer">
-        {/* تیتر و خط زیر عنوان */}
         <div className="flex flex-col items-center justify-center text-center mb-16 md:mb-24">
           <div className="relative inline-block">
             <img
@@ -76,7 +75,6 @@ export default function RoadmapSection() {
           </p>
         </div>
 
-        {/* حالت دسکتاپ */}
         <div className="hidden lg:block w-full max-w-[1025px] mx-auto pb-16">
           <div className="relative w-full h-[240px]">
             <img
@@ -85,7 +83,6 @@ export default function RoadmapSection() {
               className="w-full h-full object-fill pointer-events-none"
             />
 
-            {/* آیتم HTML & CSS */}
             <div className="absolute top-[55%] left-[17%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
               <div className="relative w-[145px] h-[145px] hover:scale-105 transition-transform duration-200">
                 <img src={cssIcon} alt="CSS" className="absolute left-0 top-3 w-[108px] h-[108px] object-contain drop-shadow-md" />
@@ -93,23 +90,19 @@ export default function RoadmapSection() {
               </div>
             </div>
 
-            {/* آیتم JavaScript */}
             <div className="absolute top-[50%] left-[39%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
               <img src={jsIcon} alt="JavaScript" className="w-[112px] h-[112px] object-contain drop-shadow-lg hover:scale-105 transition-transform duration-200" />
             </div>
 
-            {/* آیتم React JS */}
             <div className="absolute top-[48%] left-[61%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
               <img src={reactIcon} alt="React JS" className="w-[168px] h-[168px] object-contain drop-shadow-lg hover:scale-105 transition-transform duration-200" />
             </div>
 
-            {/* آیتم Figma */}
             <div className="absolute top-[50%] left-[82%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
               <img src={figmaIcon} alt="Figma" className="w-[135px] h-[135px] object-contain drop-shadow-lg hover:scale-105 transition-transform duration-200" />
             </div>
           </div>
 
-          {/* کارت‌ها و توضیحات زیر مسیر */}
           <div dir="ltr" className="grid grid-cols-4 gap-6 w-full mt-24 text-center">
             {steps.map((step) => (
               <div key={step.id} className="flex flex-col items-center px-2">
@@ -120,7 +113,6 @@ export default function RoadmapSection() {
           </div>
         </div>
 
-        {/* حالت ریسپانسیو و موبایل */}
         <div className="flex lg:hidden flex-col items-center w-full mt-10">
           <div className="relative w-full max-w-[280px]">
             <img
@@ -138,7 +130,6 @@ export default function RoadmapSection() {
             </div>
           </div>
 
-          {/* توضیحات در موبایل */}
           <div className="flex flex-col gap-6 w-full mt-10 text-center">
             {steps.map((step) => (
               <div key={step.id} className="flex flex-col items-center px-4">

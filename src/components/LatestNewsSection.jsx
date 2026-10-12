@@ -84,7 +84,6 @@ export default function LatestNewsSection() {
           </div>
         </div>
 
-        {/* لیست کارت‌های اخبار */}
         <div className="mb-12 grid w-full grid-cols-1 justify-items-center gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {newsCards.map((card) => (
             <div

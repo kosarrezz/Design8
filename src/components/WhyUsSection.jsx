@@ -9,7 +9,6 @@ export default function WhyUsSection() {
     >
       <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         
-        {/* ستون تصویر و مدال سابقه */}
         <div className="lg:col-span-6 flex justify-center lg:justify-start">
           <div className="relative w-full max-w-[400px]">
             <img 
@@ -18,7 +17,6 @@ export default function WhyUsSection() {
               className="w-full h-[450px] object-cover rounded-[40px] shadow-sm"
             />
 
-            {/* کارت شناور سابقه */}
             <div className="absolute top-85 right-58 w-[170px] h-[155px] bg-[#00C5EB] rounded-[32px] flex flex-col justify-center items-center text-white shadow-xl z-10">
               <span className="text-[38px] font-black tracking-tighter leading-none mb-1">
                 +20
@@ -30,7 +28,6 @@ export default function WhyUsSection() {
           </div>
         </div>
 
-        {/* ستون توضیحات و ویژگی‌ها */}
         <div className="lg:col-span-5 flex flex-col justify-center items-start text-right max-w-[430px] mx-auto lg:mx-0">
           <h2 className="text-[22px] md:text-[26px] font-black text-[#101828] dark:text-white leading-[1.35] mb-3.5 transition-colors duration-200">
             چرا به یک جامعه‌ی یادگیرندگان مادام‌العمر نیاز داریم؟
@@ -40,7 +37,6 @@ export default function WhyUsSection() {
             زیرا برنامه‌نویسی فقط یک مهارت فنی نیست؛ راهی است برای تقویت تفکر منطقی، حل مسئله و ساختن آینده‌ای روشن‌تر. با همراهی یک جامعه فعال و پشتیبان، می‌توانی بر چالش‌ها مسلط شوی و مسیر رشد خود را با اعتماد بیشتری طی کنی.
           </p>
 
-          {/* ویژگی اول */}
           <div className="flex items-start gap-3.5 mb-4">
             <div className="w-8 h-8 rounded-full bg-[#E0F7FA] dark:bg-cyan-500/10 flex items-center justify-center shrink-0 text-[#00C5EB] transition-colors duration-200">
               <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
@@ -60,7 +56,6 @@ export default function WhyUsSection() {
             </div>
           </div>
 
-          {/* ویژگی دوم */}
           <div className="flex items-start gap-3.5 mb-6">
             <div className="w-8 h-8 rounded-full bg-[#E0F7FA] dark:bg-cyan-500/10 flex items-center justify-center shrink-0 text-[#00C5EB] transition-colors duration-200">
               <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
@@ -79,7 +74,6 @@ export default function WhyUsSection() {
             </div>
           </div>
 
-          {/* دکمه */}
           <button className="bg-[#00C5EB] text-white font-bold text-[13px] px-6 py-2.5 rounded-full hover:bg-[#00b2d4] transition-all cursor-pointer shadow-sm hover:shadow">
             درباره سفر ما بیشتر بدانید
           </button>

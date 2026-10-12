@@ -70,7 +70,6 @@ export default function BestCoursesSection() {
     <section dir="rtl" className="w-full py-16 bg-[#F8FAFC] dark:bg-[#2E2E2E] font-sans transition-colors duration-200">
       <div className="max-w-[1240px] mx-auto px-4">
         
-        {/* تیتر سکشن */}
         <div className="flex flex-col items-center justify-center mb-12">
           <div className="relative inline-block">
             <h2 className="text-[30px] md:text-[34px] font-black text-[#101828] dark:text-white">
@@ -92,14 +91,12 @@ export default function BestCoursesSection() {
           </div>
         </div>
 
-        {/* گرید کارت‌ها */}
         <div className="cursor-pointer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {coursesData.map((course) => (
             <div
               key={course.id}
               className="relative w-full max-w-[360px] bg-[#1E40AF] dark:bg-[#1e293b] rounded-[24px] pt-12 pb-3 px-3 shadow-md overflow-hidden flex flex-col justify-end transition-colors duration-200"
             >
-              {/* نشان تخفیف چندپر */}
               <div
                 style={{
                   clipPath:
@@ -111,7 +108,6 @@ export default function BestCoursesSection() {
                 <span className="text-[8px]">تخفیف</span>
               </div>
 
-              {/* آیکون دوره */}
               <div className="flex justify-center items-center my-4">
                 <img
                   src={cssIcon}
@@ -120,7 +116,6 @@ export default function BestCoursesSection() {
                 />
               </div>
 
-              {/* بخش مشخصات کارت با پس‌زمینه #212121 در حالت دارک */}
               <div className="bg-white dark:bg-[#212121] rounded-[20px] p-4 text-right shadow-sm mt-3 border border-transparent dark:border-[#333333] transition-colors duration-200">
                 
                 <div className="w-10 h-1 bg-[#FBBF24] rounded-full mb-3" />
