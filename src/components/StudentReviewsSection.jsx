@@ -62,7 +62,7 @@ export default function StudentReviewsSection() {
   return (
     <section
       dir="rtl"
-      className="w-full py-20 bg-[#F9FAFB] dark:bg-[#2E2E2E] overflow-hidden transition-colors duration-200"
+      className="hidden md:block w-full py-20 bg-[#F9FAFB] dark:bg-[#2E2E2E] overflow-hidden transition-colors duration-200"
     >
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-12">
         

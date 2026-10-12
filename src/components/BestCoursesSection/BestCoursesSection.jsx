@@ -6,7 +6,7 @@ const coursesData = [
   {
     id: 1,
     title: "آموزش Node.js",
-    instructor: "دکتر بحرالعلوا",
+    instructor: "دکتر بحرالعلومی",
     rating: 5,
     students: "22",
     oldPrice: "400.000 تومان",
@@ -16,7 +16,7 @@ const coursesData = [
   {
     id: 2,
     title: "آموزش Node.js",
-    instructor: "دکتر بحرالعلوا",
+    instructor: "دکتر بحرالعلومی",
     rating: 5,
     students: "22",
     oldPrice: "400.000 تومان",
@@ -26,7 +26,7 @@ const coursesData = [
   {
     id: 3,
     title: "آموزش Node.js",
-    instructor: "دکتر بحرالعلوا",
+    instructor: "دکتر بحرالعلومی",
     rating: 5,
     students: "22",
     oldPrice: "400.000 تومان",
@@ -36,7 +36,7 @@ const coursesData = [
   {
     id: 4,
     title: "آموزش Node.js",
-    instructor: "دکتر بحرالعلوا",
+    instructor: "دکتر بحرالعلومی",
     rating: 5,
     students: "22",
     oldPrice: "400.000 تومان",
@@ -46,7 +46,7 @@ const coursesData = [
   {
     id: 5,
     title: "آموزش Node.js",
-    instructor: "دکتر بحرالعلوا",
+    instructor: " دکتر بحرالعلومی",
     rating: 5,
     students: "22",
     oldPrice: "400.000 تومان",
@@ -56,7 +56,7 @@ const coursesData = [
   {
     id: 6,
     title: "آموزش Node.js",
-    instructor: "دکتر بحرالعلوا",
+    instructor: "دکتر بحرالعلومی",
     rating: 5,
     students: "22",
     oldPrice: "400.000 تومان",
@@ -67,7 +67,7 @@ const coursesData = [
 
 export default function BestCoursesSection() {
   return (
-    <section dir="rtl" className="w-full py-16 bg-[#F8FAFC] dark:bg-[#2E2E2E] font-sans transition-colors duration-200">
+    <section dir="rtl" className="w-full py-16 bg-[#F8FAFC] dark:bg-[#2E2E2E] font-sans transition-colors duration-200 hidden md:block">
       <div className="max-w-[1240px] mx-auto px-4">
         
         <div className="flex flex-col items-center justify-center mb-12">
@@ -125,7 +125,7 @@ export default function BestCoursesSection() {
                 </h3>
 
                 <div className="flex items-center justify-between pb-3 border-b border-gray-100 dark:border-[#333333]">
-                  <div className="flex items-center gap-1.5 bg-[#E0F2FE] dark:bg-[#0369a1]/30 text-[#0284C7] dark:text-[#38bdf8] text-[11px] font-bold px-2 py-1 rounded-lg">
+                  <div className="flex items-center gap-1.5 bg-[#0CBDE2] dark:bg-[#0369a1]/30 text-[#0284C7] dark:text-[#38bdf8] text-[11px] font-bold px-2 py-1 rounded-lg">
                     <span>{course.instructor}</span>
                   </div>
 

@@ -43,7 +43,7 @@ function Navbar() {
   }
 
   return (
-    <header className="bg-white dark:bg-[#2E2E2E] rounded-2xl shadow-lg shadow-gray-200/50 dark:shadow-none mx-2 sm:mx-4 mt-3 px-3 sm:px-5 lg:px-8 py-2 transition-colors">
+    <header className="bg-white dark:bg-[#2E2E2E] rounded-2xl shadow-lg shadow-gray-200/50 dark:shadow-none mx-2 sm:mx-4 mt-3 px-3 sm:px-5 lg:px-8 py-2 transition-colors duration-200">
       <div className="max-w-[1320px] h-[52px] sm:h-[60px] mx-auto flex items-center justify-between font-bold">
 
         <div className="flex items-center gap-3 shrink-0">
@@ -64,7 +64,7 @@ function Navbar() {
             <li key={link.id}>
               <a
                 href={link.href}
-                className="text-gray-700 dark:text-gray-200 hover:text-[#07687c] dark:hover:text-[#07687c] text-sm transition-colors"
+                className="text-gray-700 dark:text-gray-200 hover:text-[#07687c] dark:hover:text-[#07687c] text-sm transition-colors duration-200"
               >
                 {link.title}
               </a>
@@ -77,7 +77,7 @@ function Navbar() {
           <button
             type="button"
             onClick={toggleDarkMode}
-            className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-[#2a2a2a] border border-gray-200 dark:border-[#333333] hover:bg-gray-100 dark:hover:bg-[#333333] transition-colors"
+            className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-[#2a2a2a] border border-gray-200 dark:border-[#333333] hover:bg-gray-100 dark:hover:bg-[#333333] transition-colors duration-200"
             aria-label="تغییر تم"
           >
             {isDark ? (
@@ -87,10 +87,9 @@ function Navbar() {
             )}
           </button>
 
-          {/* تغییر رنگ دکمه به رنگ سازمانی جدید */}
           <button
             type="button"
-            className="bg-[#07687c] hover:bg-[#065a6b] text-white h-9 sm:h-10 px-4 sm:px-6 rounded-full text-xs lg:text-sm flex items-center gap-2 whitespace-nowrap transition-colors"
+            className="bg-[#0CBDE2] dark:bg-[#07687C] hover:bg-[#065a6b] dark:hover:bg-[#055363] text-white h-9 sm:h-10 px-4 sm:px-6 rounded-full text-xs lg:text-sm flex items-center gap-2 whitespace-nowrap transition-all duration-200"
           >
             ورود یا ثبت نام
           </button>
@@ -119,7 +118,7 @@ function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-sm text-gray-700 dark:text-gray-200 hover:text-[#07687c] dark:hover:text-[#07687c] transition-colors"
+                  className="block text-sm text-gray-700 dark:text-gray-200 hover:text-[#07687c] dark:hover:text-[#07687c] transition-colors duration-200"
                 >
                   {link.title}
                 </a>

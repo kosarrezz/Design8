@@ -5,7 +5,6 @@ function InstructorCard({ instructor }) {
   return (
     <article className="cursor-pointer group flex flex-col items-center">
       <div className="relative mb-4 flex h-[250px] w-[230px] items-end justify-center">
-        {/* رنگ پس‌زمینه کارت با پالت سازمانی #07687c هماهنگ شد */}
         <div className="absolute bottom-0 left-0 h-[190px] w-full rounded-2xl bg-[#07687c]/20 dark:bg-[#07687c]/30 overflow-hidden">
           <div className="absolute left-0 top-0 h-[55px] w-[65px] rounded-br-[30px] bg-white dark:bg-[#212121] transition-colors duration-200" />
         </div>
@@ -64,8 +63,7 @@ export default function TopInstructors() {
         </div>
 
         <div className="flex justify-center">
-          {/* دکمه با رنگ سازمانی #07687c آپدیت شد */}
-          <button className="rounded-2xl bg-[#07687c] px-10 py-3 text-[15px] font-bold text-white shadow-md hover:shadow-lg transition-all hover:bg-[#055363] active:scale-95 cursor-pointer">
+          <button className="bg-[#0CBDE2] dark:bg-[#07687C] hover:bg-[#065a6b] dark:hover:bg-[#055363] text-white rounded-2xl px-10 py-3 text-[15px] font-bold shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 cursor-pointer">
             دوست داری بیشتر ببینی
           </button>
         </div>

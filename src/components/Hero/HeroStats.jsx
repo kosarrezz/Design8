@@ -35,7 +35,6 @@ export default function HeroStats() {
       type: "stat",
       count: "+1000",
       text: "دانشجوی فعال و شاغل \n در سر تا سر جهان",
-      // هماهنگ‌سازی با رنگ سازمانی جدید برای دارک مود
       bgClass: "bg-[#a5f3fc] dark:bg-[#07687c] dark:border dark:border-[#07687c]/30",
       textCount: "text-slate-800 dark:text-white",
       textLabel: "text-slate-700 dark:text-cyan-100",

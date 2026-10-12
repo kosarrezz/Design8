@@ -3,14 +3,13 @@ import HeroStats from "./HeroStats";
 
 export default function Hero() {
   return (
-    <section className="w-full pt-8 pb-14 px-4 text-center bg-transparent dark:bg-[#212121] transition-colors">
+    <section className="w-full pt-8 pb-14 px-4 text-center bg-transparent dark:bg-[#212121] transition-colors duration-200">
       <div className="max-w-3xl mx-auto flex flex-col items-center">
         
         <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#1e293b] dark:text-white leading-tight flex flex-wrap items-center justify-center gap-2">
           <span>آموزش</span>
           
-          {/* تغییر رنگ به رنگ سازمانی جدید */}
-          <span className="inline-flex items-center justify-center bg-[#07687c] text-white px-4 sm:px-6 py-1 sm:py-4.5 rounded-full text-xl sm:text-3xl md:text-4xl font-medium my-1 shadow-sm">
+          <span className="inline-flex items-center justify-center bg-[#5CD3EC] dark:bg-[#07687c] text-white px-4 sm:px-6 py-1 sm:py-4.5 rounded-full text-xl sm:text-3xl md:text-4xl font-medium my-1 shadow-sm transition-colors duration-200">
             برنامه‌نویسی
           </span>
           
@@ -26,10 +25,9 @@ export default function Hero() {
         </p>
 
         <div className="mt-6 sm:mt-8">
-          {/* تغییر رنگ دکمه به رنگ سازمانی جدید و ایجاد حالت Hover مناسب */}
           <button
             type="button"
-            className="bg-[#07687c] hover:bg-[#065a6b] text-white mt-2 font-medium text-xs sm:text-sm px-7 py-2.5 sm:px-8 sm:py-3 rounded-full shadow-sm hover:shadow transition-all duration-200 cursor-pointer"
+            className="bg-[#0CBDE2] dark:bg-[#07687C] hover:bg-[#065a6b] dark:hover:bg-[#055363] text-white mt-2 font-medium text-xs sm:text-sm px-7 py-2.5 sm:px-8 sm:py-3 rounded-full shadow-sm hover:shadow transition-all duration-200 cursor-pointer"
           >
             آموزش رو شروع کنیم
           </button>

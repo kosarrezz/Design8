@@ -17,7 +17,7 @@ export default function WhyUsSection() {
               className="w-full h-[450px] object-cover rounded-[40px] shadow-sm"
             />
 
-            <div className="absolute top-85 right-58 w-[170px] h-[155px] bg-[#07687c] rounded-[32px] flex flex-col justify-center items-center text-white shadow-xl z-10">
+            <div className="absolute top-85 right-58 w-[170px] h-[155px] bg-[#0cbde2] dark:bg-[#07687C] rounded-[32px] flex flex-col justify-center items-center text-white shadow-xl z-10">
               <span className="text-[38px] font-black tracking-tighter leading-none mb-1">
                 +20
               </span>
@@ -74,7 +74,7 @@ export default function WhyUsSection() {
             </div>
           </div>
 
-          <button className="bg-[#07687c] text-white font-bold text-[13px] px-6 py-2.5 rounded-full hover:bg-[#055363] transition-all cursor-pointer shadow-sm hover:shadow">
+          <button className="bg-[#0CBDE2] dark:bg-[#07687C] hover:bg-[#065a6b] dark:hover:bg-[#055363] text-white font-bold text-[13px] px-6 py-2.5 rounded-full transition-colors duration-200 cursor-pointer shadow-sm hover:shadow active:scale-95">
             درباره سفر ما بیشتر بدانید
           </button>
         </div>

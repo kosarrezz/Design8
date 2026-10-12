@@ -48,7 +48,7 @@ export default function LatestNewsSection() {
             </h2>
 
             <svg
-              className="absolute bottom-0 left-0 w-full h-[14px] text-[#07687c] -translate-y-1"
+              className="absolute bottom-0 left-0 w-full h-[14px] text-[#0CBDE2] dark:text-[#07687C] -translate-y-1 transition-colors duration-200"
               viewBox="0 0 220 20"
               fill="none"
               preserveAspectRatio="none"
@@ -74,8 +74,8 @@ export default function LatestNewsSection() {
                 onClick={() => setActiveTab(idx)}
                 className={`rounded-full px-5 py-1.5 text-[12px] font-medium transition-all duration-200 cursor-pointer ${
                   activeTab === idx
-                    ? "bg-[#07687c] text-white border border-[#07687c] shadow-sm"
-                    : "border border-[#07687c] text-[#07687c] bg-white hover:bg-[#07687c]/10 dark:bg-transparent dark:text-[#07687c]"
+                    ? "bg-[#0CBDE2] dark:bg-[#07687C] text-white border border-[#0CBDE2] dark:border-[#07687C] shadow-sm"
+                    : "border border-[#0CBDE2] dark:border-[#07687C] text-[#0CBDE2] dark:text-[#07687C] bg-white dark:bg-transparent hover:bg-[#0CBDE2]/10 dark:hover:bg-[#07687C]/10"
                 }`}
               >
                 {cat}
@@ -125,7 +125,7 @@ export default function LatestNewsSection() {
 
         <Button
           radius="full"
-          className="rounded-full bg-[#07687c] px-8 py-3 text-[14px] font-bold text-white shadow-md transition-all hover:bg-[#065a6b] cursor-pointer"
+          className="rounded-full bg-[#0CBDE2] dark:bg-[#07687C] hover:bg-[#065a6b] dark:hover:bg-[#055363] px-8 py-3 text-[14px] font-bold text-white shadow-md transition-colors duration-200 cursor-pointer"
         >
           دوست داری بیشتر ببینی
         </Button>

@@ -24,7 +24,7 @@ export default function CoursesSlider() {
     {
       id: 2,
       title: "آموزش React.js",
-      desc: "ری‌اکت محبوب‌ترین کتابخانه جاوااسکریپت برای طراحی رابط‌های کاربری وب مدرن و تعاملی است. با ری‌اکت کامپوننت‌های قدرتمند، سریع و مقیاس‌پذیر برای وب بسازید.",
+      desc: "ری‌اکت محبوب‌ترین کتابخانه جاوااسکریپت برای طراحی رابط‌های کاربری وب مدرن و تعاملی است. با ری‌اکت کامپوننت‌های قدرتمند، سریع و مقیاسپذیر برای وب بسازید.",
       priceGreen: "4,675,000 تومان",
       discountBadge: "15%",
       priceRed: "5,500,000 تومان",
@@ -110,8 +110,7 @@ export default function CoursesSlider() {
                       </div>
 
                       <div className="w-full flex" style={{ justifyContent: "flex-start" }}>
-                        {/* دکمه با رنگ جدید #07687c */}
-                        <button className="bg-[#07687c] hover:bg-[#054e5e] text-white px-6 py-2.5 rounded-xl font-bold text-[14px] flex items-center gap-2 shadow-[0_4px_14px_rgba(7,104,124,0.3)] transition-all active:scale-95 cursor-pointer">
+                        <button className="bg-[#0CBDE2] dark:bg-[#07687C] hover:bg-[#065a6b] dark:hover:bg-[#055363] text-white px-6 py-2.5 rounded-xl font-bold text-[14px] flex items-center gap-2 shadow-[0_4px_14px_rgba(7,104,124,0.3)] transition-all duration-200 active:scale-95 cursor-pointer">
                           <svg className="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                             <rect x="3" y="5" width="18" height="14" rx="3" />
                             <line x1="7" y1="14" x2="11" y2="14" />
@@ -165,7 +164,7 @@ export default function CoursesSlider() {
         .courses-swiper .swiper-pagination-bullet-active {
           width: 32px;
           border-radius: 9999px;
-          background-color: #07687c !important; /* اعمال رنگ سازمانی روی pagination */
+          background-color: #07687c 
         }
       `}</style>
 
