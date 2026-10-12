@@ -6,7 +6,7 @@ export default function CourseMobileCard() {
   return (
     <div
       dir="rtl"
-      className="w-full max-w-[320px] mx-auto bg-white dark:bg-[#1E293B] rounded-[28px] overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col select-none transition-colors duration-200"
+      className="w-full max-w-[320px] mx-auto bg-white dark:bg-[#212121] rounded-[28px] overflow-hidden shadow-sm border border-gray-100 dark:border-[#333333] flex flex-col select-none transition-colors duration-200"
     >
       <div className="w-full h-[175px] bg-[#FFD000] flex flex-col items-center justify-center relative">
         <div className="w-[68px] h-[68px] bg-white rounded-[14px] flex items-center justify-center shadow-sm mb-1.5">
@@ -17,12 +17,12 @@ export default function CourseMobileCard() {
         </span>
       </div>
 
-      <div className="p-4 flex flex-col flex-1 bg-white dark:bg-[#1E293B]">
+      <div className="p-4 flex flex-col flex-1 bg-white dark:bg-[#212121]">
         <h3 className="text-[18px] font-black text-[#1E293B] dark:text-white text-right leading-tight mb-2">
           دوره آموزش جامع HTML5
         </h3>
 
-        <p className="text-[13px] text-[#475467] dark:text-[#94A3B8] text-right leading-[1.8] line-clamp-2 mb-4 font-normal">
+        <p className="text-[13px] text-[#475467] dark:text-gray-300 text-right leading-[1.8] line-clamp-2 mb-4 font-normal">
           خواه شما مبتدی باشید یا به دنبال پیشرفت در مهارت‌های برنامه‌نویسی خود باشید، دوره‌های آم...
         </p>
 

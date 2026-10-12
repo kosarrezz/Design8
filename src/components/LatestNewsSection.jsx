@@ -38,9 +38,9 @@ export default function LatestNewsSection() {
   return (
     <section
       dir="rtl"
-      className="w-full bg-white py-16 font-sans dark:bg-gray-950"
+      className="w-full bg-white py-16 font-sans dark:bg-[#181818] transition-colors duration-200"
     >
-      <div className=" cursor-pointer mx-auto flex w-full max-w-[1180px] flex-col items-center px-4">
+      <div className="cursor-pointer mx-auto flex w-full max-w-[1180px] flex-col items-center px-4">
         <div className="mb-10 text-center">
           <div className="relative inline-block pb-3">
             <h2 className="text-[28px] font-black tracking-tight text-[#101828] dark:text-white md:text-[34px]">
@@ -62,7 +62,7 @@ export default function LatestNewsSection() {
             </svg>
           </div>
 
-          <p className="mt-3 text-[13px] text-[#98A2B3] dark:text-gray-400 md:text-[14px]">
+          <p className="mt-3 text-[13px] text-[#98A2B3] dark:text-gray-300 md:text-[14px]">
             محبوب ترین دوره های آموزشی نویسندگان متخصص ما را بررسی کنید.
           </p>
 
@@ -75,7 +75,7 @@ export default function LatestNewsSection() {
                 className={`rounded-full px-5 py-1.5 text-[12px] font-medium transition-all duration-200 cursor-pointer ${
                   activeTab === idx
                     ? "bg-[#00bcd4] text-white border border-[#00bcd4] shadow-sm"
-                    : "border border-[#00bcd4] text-[#00bcd4] bg-white hover:bg-[#00bcd4]/10 dark:bg-transparent"
+                    : "border border-[#00bcd4] text-[#00bcd4] bg-white hover:bg-[#00bcd4]/10 dark:bg-transparent dark:text-[#00bcd4]"
                 }`}
               >
                 {cat}
@@ -84,6 +84,7 @@ export default function LatestNewsSection() {
           </div>
         </div>
 
+        {/* لیست کارت‌های اخبار */}
         <div className="mb-12 grid w-full grid-cols-1 justify-items-center gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {newsCards.map((card) => (
             <div

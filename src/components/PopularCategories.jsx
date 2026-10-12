@@ -21,28 +21,26 @@ const categories = [
 ];
 
 export default function PopularCategories() {
-
-
   const row1 = categories.slice(0, 8);
   const row2 = categories.slice(8, 16);
 
   const renderItem = (cat) => (
     <div
       key={cat.id}
-      className="flex-shrink-0 flex items-center justify-between gap-3 bg-white dark:bg-gray-800 
-                 border border-[#EAECF0] dark:border-gray-700 rounded-full 
+      className="flex-shrink-0 flex items-center justify-between gap-3 bg-white dark:bg-[#212121] 
+                 border border-[#EAECF0] dark:border-[#333333] rounded-full 
                  px-4 py-2.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)]
-                 hover:shadow-md hover:border-[#00B4D8] transition-all cursor-pointer select-none"
+                 hover:shadow-md hover:border-[#00B4D8] dark:hover:border-[#00B4D8] transition-all cursor-pointer select-none"
     >
-      <div className="flex items-center justify-center px-2 py-0.5 rounded-lg border border-[#38BDF8] bg-[#F0F9FF] text-[#0284C7] text-[11px] font-extrabold tracking-wide">
+      <div className="flex items-center justify-center px-2 py-0.5 rounded-lg border border-[#38BDF8] bg-[#F0F9FF] dark:bg-[#0369a1]/25 dark:border-[#0284C7] text-[#0284C7] dark:text-[#38BDF8] text-[11px] font-extrabold tracking-wide">
         API
       </div>
 
-      <span className="text-[14px] font-bold text-[#1D2939] dark:text-gray-100 whitespace-nowrap">
+      <span className="text-[14px] font-bold text-[#1D2939] dark:text-white whitespace-nowrap">
         {cat.title}
       </span>
 
-      <div className="w-6 h-6 rounded-full border border-[#D0D5DD] flex items-center justify-center text-[#98A2B3]">
+      <div className="w-6 h-6 rounded-full border border-[#D0D5DD] dark:border-[#444444] flex items-center justify-center text-[#98A2B3] dark:text-gray-400">
         <svg
           className="w-3.5 h-3.5"
           fill="none"
@@ -57,7 +55,7 @@ export default function PopularCategories() {
   );
 
   return (
-    <section dir="rtl" className="w-full py-16 bg-[#FBFDFE] dark:bg-gray-900 overflow-hidden">
+    <section dir="rtl" className="w-full py-16 bg-[#FBFDFE] dark:bg-[#181818] overflow-hidden transition-colors duration-200">
       <div className="max-w-[1200px] mx-auto px-4 text-center">
 
         <div className="flex flex-col items-center justify-center mb-2">
@@ -76,8 +74,8 @@ export default function PopularCategories() {
         </p>
       </div>
 
+      {/* نوارهای متحرک و مورب */}
       <div className="w-[120vw] -mr-[10vw] transform -rotate-[3deg] flex flex-col gap-4 py-4 select-none">
-
         <div className="flex flex-nowrap justify-center gap-4">
           {row1.map(renderItem)}
         </div>

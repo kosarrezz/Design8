@@ -62,12 +62,12 @@ export default function StudentReviewsSection() {
   return (
     <section
       dir="rtl"
-      className=" cursor-pointer w-full py-20 bg-[#F9FAFB] dark:bg-gray-900 overflow-hidden"
+      className="cursor-pointer w-full py-20 bg-[#F9FAFB] dark:bg-[#2E2E2E] overflow-hidden transition-colors duration-200"
     >
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-12">
         
+        {/* ستون متن و معرفی */}
         <div className="lg:w-5/12 w-full text-right select-none">
-          
           <div className="flex items-center justify-between mb-4">
             <span className="text-[#0284C7] dark:text-[#38BDF8] text-[14px] font-bold">
               نظرات دانشجویان
@@ -77,7 +77,7 @@ export default function StudentReviewsSection() {
               <button
                 onClick={handlePrevSlide}
                 aria-label="نظر قبلی"
-                className="w-9 h-9 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#0284C7] hover:text-white hover:border-[#0284C7] transition-all cursor-pointer"
+                className="w-9 h-9 rounded-full border border-gray-200 dark:border-[#333333] flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#0284C7] hover:text-white hover:border-[#0284C7] dark:hover:bg-[#0284C7] dark:hover:border-[#0284C7] transition-all cursor-pointer"
               >
                 <ArrowRight02Icon size={18} />
               </button>
@@ -85,7 +85,7 @@ export default function StudentReviewsSection() {
               <button
                 onClick={handleNextSlide}
                 aria-label="نظر بعدی"
-                className="w-9 h-9 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#0284C7] hover:text-white hover:border-[#0284C7] transition-all cursor-pointer"
+                className="w-9 h-9 rounded-full border border-gray-200 dark:border-[#333333] flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#0284C7] hover:text-white hover:border-[#0284C7] dark:hover:bg-[#0284C7] dark:hover:border-[#0284C7] transition-all cursor-pointer"
               >
                 <ArrowLeft02Icon size={18} />
               </button>
@@ -96,7 +96,7 @@ export default function StudentReviewsSection() {
             برای مزایا به برنامه آموزشی هوشمند دسترسی پیدا کنید.
           </h2>
 
-          <p className="text-[#667085] dark:text-gray-400 text-[14px] md:text-[15px] leading-relaxed mb-8">
+          <p className="text-[#667085] dark:text-gray-300 text-[14px] md:text-[15px] leading-relaxed mb-8">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است.
           </p>
@@ -124,6 +124,7 @@ export default function StudentReviewsSection() {
           </div>
         </div>
 
+        {/* اسلایدر نظرات */}
         <div className="lg:w-7/12 w-full">
           <Swiper
             onSwiper={(swiper) => {
@@ -143,10 +144,10 @@ export default function StudentReviewsSection() {
               <SwiperSlide key={rev.id} className="!h-auto">
                 {({ isActive }) => (
                   <div
-                    className={`transition-all duration-300 rounded-[24px] p-8 flex flex-col justify-between bg-white dark:bg-gray-800 border ${
+                    className={`transition-all duration-300 rounded-[24px] p-8 flex flex-col justify-between bg-white dark:bg-[#212121] border ${
                       isActive
                         ? "scale-100 opacity-100 shadow-xl border-[#0284C7] dark:border-[#0284C7]"
-                        : "scale-95 opacity-40 blur-[0.4px] border-[#EAECF0] dark:border-gray-700"
+                        : "scale-95 opacity-40 blur-[0.4px] border-[#EAECF0] dark:border-[#333333]"
                     }`}
                     style={{ minHeight: "320px" }}
                   >
@@ -158,12 +159,12 @@ export default function StudentReviewsSection() {
                         {"★".repeat(rev.rating)}
                       </div>
 
-                      <p className="text-[#344054] dark:text-gray-300 text-[14px] leading-relaxed mb-6">
+                      <p className="text-[#344054] dark:text-gray-200 text-[14px] leading-relaxed mb-6">
                         {rev.comment}
                       </p>
                     </div>
 
-                    <div className="flex items-center gap-3 pt-4 border-t border-[#F2F4F7] dark:border-gray-700">
+                    <div className="flex items-center gap-3 pt-4 border-t border-[#F2F4F7] dark:border-[#333333]">
                       <img
                         src={rev.avatar}
                         alt={rev.name}

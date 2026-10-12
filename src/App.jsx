@@ -7,16 +7,14 @@ import WhyUsSection from "./components/WhyUsSection";
 import RoadmapSection from "./components/RoadmapSection";
 import BestCoursesSection from "./components/BestCoursesSection/BestCoursesSection";
 import PopularCategories from "./components/PopularCategories";
-import { StudentCardFreeIcons } from "@hugeicons/core-free-icons";
 import StudentReviewsSection from "./components/StudentReviewsSection";
 import LatestNewsSection from "./components/LatestNewsSection";
 import Footer from "./Footer";
 
-
 function App() {
   return (
-<div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
-        <Navbar />
+    <div dir="rtl" className="min-h-screen bg-white dark:bg-[#212121] transition-colors duration-300">
+      <Navbar />
       <Hero />
       <CoursesSlider />
       <TopInstructors />
@@ -25,10 +23,9 @@ function App() {
       <BestCoursesSection />
       <PopularCategories />
       <StudentReviewsSection />
-        <LatestNewsSection />
-    <Footer />
+      <LatestNewsSection />
+      <Footer />
     </div>
-    
   );
 }
 

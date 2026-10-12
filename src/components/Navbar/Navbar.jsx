@@ -43,7 +43,7 @@ function Navbar() {
   }
 
   return (
-    <header className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg shadow-gray-200/50 dark:shadow-none mx-2 sm:mx-4 mt-3 px-3 sm:px-5 lg:px-8 py-2 transition-colors">
+    <header className="bg-white dark:bg-[#2E2E2E] rounded-2xl shadow-lg shadow-gray-200/50 dark:shadow-none mx-2 sm:mx-4 mt-3 px-3 sm:px-5 lg:px-8 py-2 transition-colors">
       <div className="max-w-[1320px] h-[52px] sm:h-[60px] mx-auto flex items-center justify-between font-bold">
 
         <div className="flex items-center gap-3 shrink-0">
@@ -77,7 +77,7 @@ function Navbar() {
           <button
             type="button"
             onClick={toggleDarkMode}
-            className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-[#2a2a2a] border border-gray-200 dark:border-[#333333] hover:bg-gray-100 dark:hover:bg-[#333333] transition-colors"
             aria-label="تغییر تم"
           >
             {isDark ? (
@@ -111,7 +111,7 @@ function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="lg:hidden border-t border-gray-100 dark:border-gray-700 pt-4 pb-3 mt-2">
+        <div className="lg:hidden border-t border-gray-100 dark:border-[#333333] pt-4 pb-3 mt-2">
           <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <li key={link.id}>
@@ -126,7 +126,7 @@ function Navbar() {
             ))}
           </ul>
 
-          <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-center gap-3">
+          <div className="mt-5 pt-4 border-t border-gray-100 dark:border-[#333333] flex items-center justify-center gap-3">
             <img src={logoPart1} alt="لوگوی آکادمی بحر" className="h-7 w-auto" />
             <img src={logoPart2} alt="لوگوی آیکون بحر" className="h-7 w-auto" />
           </div>

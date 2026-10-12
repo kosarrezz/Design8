@@ -18,9 +18,9 @@ export default function HeroStats() {
       type: "stat",
       count: "+20",
       text: "سال سابقه آموزش \n در برنامه‌نویسان",
-      bgClass: "bg-[#e2e8f0] dark:bg-[#334155]",
+      bgClass: "bg-[#e2e8f0] dark:bg-[#2a2a2a] dark:border dark:border-[#333333]",
       textCount: "text-slate-800 dark:text-white",
-      textLabel: "text-slate-700 dark:text-slate-200",
+      textLabel: "text-slate-700 dark:text-gray-300",
       boxSize: "w-36 h-48 lg:w-40 lg:h-52",
     },
     {
@@ -35,9 +35,9 @@ export default function HeroStats() {
       type: "stat",
       count: "+1000",
       text: "دانشجوی فعال و شاغل \n در سر تا سر جهان",
-      bgClass: "bg-[#a5f3fc] dark:bg-[#0891b2]",
+      bgClass: "bg-[#a5f3fc] dark:bg-[#07687C] dark:border dark:border-[#0CBDE2]/30",
       textCount: "text-slate-800 dark:text-white",
-      textLabel: "text-slate-700 dark:text-slate-100",
+      textLabel: "text-slate-700 dark:text-cyan-100",
       boxSize: "w-36 h-48 lg:w-40 lg:h-52",
     },
     {
@@ -84,7 +84,7 @@ export default function HeroStats() {
         ))}
       </div>
 
-      {/*ریسپانسیو موبایل */}
+      {/* ریسپانسیو موبایل */}
       <div className="flex md:hidden flex-col items-center gap-4 w-full max-w-xs mx-auto">
         {cards
           .filter((item) => item.type === "stat")

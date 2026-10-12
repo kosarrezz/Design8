@@ -67,9 +67,10 @@ const coursesData = [
 
 export default function BestCoursesSection() {
   return (
-    <section dir="rtl" className="w-full py-16 bg-[#F8FAFC] dark:bg-gray-950 font-sans">
+    <section dir="rtl" className="w-full py-16 bg-[#F8FAFC] dark:bg-[#2E2E2E] font-sans transition-colors duration-200">
       <div className="max-w-[1240px] mx-auto px-4">
         
+        {/* تیتر سکشن */}
         <div className="flex flex-col items-center justify-center mb-12">
           <div className="relative inline-block">
             <h2 className="text-[30px] md:text-[34px] font-black text-[#101828] dark:text-white">
@@ -91,13 +92,14 @@ export default function BestCoursesSection() {
           </div>
         </div>
 
+        {/* گرید کارت‌ها */}
         <div className="cursor-pointer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {coursesData.map((course) => (
             <div
               key={course.id}
-              className="relative w-full max-w-[360px] bg-[#1E40AF] rounded-[24px] pt-12 pb-3 px-3 shadow-md overflow-hidden flex flex-col justify-end"
+              className="relative w-full max-w-[360px] bg-[#1E40AF] dark:bg-[#1e293b] rounded-[24px] pt-12 pb-3 px-3 shadow-md overflow-hidden flex flex-col justify-end transition-colors duration-200"
             >
-              {/* نشان تخفیف به شکل ستاره (چندپر) */}
+              {/* نشان تخفیف چندپر */}
               <div
                 style={{
                   clipPath:
@@ -109,6 +111,7 @@ export default function BestCoursesSection() {
                 <span className="text-[8px]">تخفیف</span>
               </div>
 
+              {/* آیکون دوره */}
               <div className="flex justify-center items-center my-4">
                 <img
                   src={cssIcon}
@@ -116,7 +119,9 @@ export default function BestCoursesSection() {
                   className="h-16 w-auto object-contain drop-shadow"
                 />
               </div>
-              <div className="bg-white dark:bg-gray-900 rounded-[20px] p-4 text-right shadow-sm mt-3">
+
+              {/* بخش مشخصات کارت با پس‌زمینه #212121 در حالت دارک */}
+              <div className="bg-white dark:bg-[#212121] rounded-[20px] p-4 text-right shadow-sm mt-3 border border-transparent dark:border-[#333333] transition-colors duration-200">
                 
                 <div className="w-10 h-1 bg-[#FBBF24] rounded-full mb-3" />
 
@@ -124,8 +129,8 @@ export default function BestCoursesSection() {
                   {course.title}
                 </h3>
 
-                <div className="flex items-center justify-between pb-3 border-b border-gray-100 dark:border-gray-800">
-                  <div className="flex items-center gap-1.5 bg-[#E0F2FE] dark:bg-sky-950/40 text-[#0284C7] dark:text-sky-300 text-[11px] font-bold px-2 py-1 rounded-lg">
+                <div className="flex items-center justify-between pb-3 border-b border-gray-100 dark:border-[#333333]">
+                  <div className="flex items-center gap-1.5 bg-[#E0F2FE] dark:bg-[#0369a1]/30 text-[#0284C7] dark:text-[#38bdf8] text-[11px] font-bold px-2 py-1 rounded-lg">
                     <span>{course.instructor}</span>
                   </div>
 
@@ -141,12 +146,12 @@ export default function BestCoursesSection() {
                     <span className="text-[#10B981] font-black text-[13px]">
                       {course.price}
                     </span>
-                    <span className="text-red-700 line-through text-[11px]">
+                    <span className="text-red-500 line-through text-[11px]">
                       {course.oldPrice}
                     </span>
                   </div>
 
-                  <div className="flex items-center gap-1 bg-[#F1F5F9] dark:bg-gray-800 text-[#64748B] text-[11px] px-2 py-0.5 rounded-lg">
+                  <div className="flex items-center gap-1 bg-[#F1F5F9] dark:bg-[#2c2c2c] text-[#64748B] dark:text-gray-300 text-[11px] px-2 py-0.5 rounded-lg">
                     <UserMultiple02Icon size={13} />
                     <span>{course.students}</span>
                   </div>

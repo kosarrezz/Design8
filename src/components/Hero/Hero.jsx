@@ -3,7 +3,7 @@ import HeroStats from "./HeroStats";
 
 export default function Hero() {
   return (
-    <section className="w-full pt-8 pb-14 px-4 text-center">
+    <section className="w-full pt-8 pb-14 px-4 text-center bg-transparent dark:bg-[#212121] transition-colors">
       <div className="max-w-3xl mx-auto flex flex-col items-center">
         
         <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#1e293b] dark:text-white leading-tight flex flex-wrap items-center justify-center gap-2">
@@ -20,7 +20,7 @@ export default function Hero() {
           سریع و همیشه همراه شما
         </h2>
 
-        <p className="mt-4 max-w-xl text-xs sm:text-sm md:text-base text-slate-500 dark:text-slate-400 leading-relaxed font-light sm:font-normal">
+        <p className="mt-4 max-w-xl text-xs sm:text-sm md:text-base text-slate-500 dark:text-gray-300 leading-relaxed font-light sm:font-normal">
           در وبسایت ما می‌توانید دوره‌ها و کلاس‌هایی را پیدا کنید که به شما کمک می‌کنند مهارت بیاموزید، پیشرفت کنید و در مسیر رشد شخصی و حرفه‌ای سرزنده بمانید.
         </p>
 
@@ -33,7 +33,7 @@ export default function Hero() {
           </button>
         </div>
       </div>
-        <HeroStats />
+      <HeroStats />
     </section>
   );
 }
