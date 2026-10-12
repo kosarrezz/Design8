@@ -51,7 +51,6 @@ export default function HeroStats() {
 
   return (
     <div className="w-full max-w-5xl mx-auto mt-10 px-4">
-      {/* نمایش md */}
       <div className="hidden md:flex items-center justify-center gap-3 lg:gap-4">
         {cards.map((item) => (
           <div
@@ -84,7 +83,6 @@ export default function HeroStats() {
         ))}
       </div>
 
-      {/* ریسپانسیو موبایل */}
       <div className="flex md:hidden flex-col items-center gap-4 w-full max-w-xs mx-auto">
         {cards
           .filter((item) => item.type === "stat")
