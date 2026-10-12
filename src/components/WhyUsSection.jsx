@@ -5,7 +5,7 @@ export default function WhyUsSection() {
   return (
     <section 
       dir="rtl" 
-      className="cursor-pointer hidden lg:block w-full py-14 px-6 bg-white dark:bg-[#212121] select-none transition-colors duration-200"
+      className="hidden lg:block w-full py-14 px-6 bg-white dark:bg-[#212121] select-none transition-colors duration-200"
     >
       <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         
@@ -17,7 +17,7 @@ export default function WhyUsSection() {
               className="w-full h-[450px] object-cover rounded-[40px] shadow-sm"
             />
 
-            <div className="absolute top-85 right-58 w-[170px] h-[155px] bg-[#00C5EB] rounded-[32px] flex flex-col justify-center items-center text-white shadow-xl z-10">
+            <div className="absolute top-85 right-58 w-[170px] h-[155px] bg-[#07687c] rounded-[32px] flex flex-col justify-center items-center text-white shadow-xl z-10">
               <span className="text-[38px] font-black tracking-tighter leading-none mb-1">
                 +20
               </span>
@@ -38,7 +38,7 @@ export default function WhyUsSection() {
           </p>
 
           <div className="flex items-start gap-3.5 mb-4">
-            <div className="w-8 h-8 rounded-full bg-[#E0F7FA] dark:bg-cyan-500/10 flex items-center justify-center shrink-0 text-[#00C5EB] transition-colors duration-200">
+            <div className="w-8 h-8 rounded-full bg-[#07687c]/10 flex items-center justify-center shrink-0 text-[#07687c] transition-colors duration-200">
               <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                 <circle cx="9" cy="7" r="4" />
@@ -57,7 +57,7 @@ export default function WhyUsSection() {
           </div>
 
           <div className="flex items-start gap-3.5 mb-6">
-            <div className="w-8 h-8 rounded-full bg-[#E0F7FA] dark:bg-cyan-500/10 flex items-center justify-center shrink-0 text-[#00C5EB] transition-colors duration-200">
+            <div className="w-8 h-8 rounded-full bg-[#07687c]/10 flex items-center justify-center shrink-0 text-[#07687c] transition-colors duration-200">
               <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                 <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
                 <path d="M6 6h10" />
@@ -74,7 +74,7 @@ export default function WhyUsSection() {
             </div>
           </div>
 
-          <button className="bg-[#00C5EB] text-white font-bold text-[13px] px-6 py-2.5 rounded-full hover:bg-[#00b2d4] transition-all cursor-pointer shadow-sm hover:shadow">
+          <button className="bg-[#07687c] text-white font-bold text-[13px] px-6 py-2.5 rounded-full hover:bg-[#055363] transition-all cursor-pointer shadow-sm hover:shadow">
             درباره سفر ما بیشتر بدانید
           </button>
         </div>

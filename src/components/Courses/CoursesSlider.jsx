@@ -110,7 +110,8 @@ export default function CoursesSlider() {
                       </div>
 
                       <div className="w-full flex" style={{ justifyContent: "flex-start" }}>
-                        <button className="bg-[#00C5EB] hover:bg-[#00b4d8] text-white px-6 py-2.5 rounded-xl font-bold text-[14px] flex items-center gap-2 shadow-[0_4px_14px_rgba(0,197,235,0.3)] transition-all active:scale-95 cursor-pointer">
+                        {/* دکمه با رنگ جدید #07687c */}
+                        <button className="bg-[#07687c] hover:bg-[#054e5e] text-white px-6 py-2.5 rounded-xl font-bold text-[14px] flex items-center gap-2 shadow-[0_4px_14px_rgba(7,104,124,0.3)] transition-all active:scale-95 cursor-pointer">
                           <svg className="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                             <rect x="3" y="5" width="18" height="14" rx="3" />
                             <line x1="7" y1="14" x2="11" y2="14" />
@@ -122,7 +123,6 @@ export default function CoursesSlider() {
                     </div>
                   </div>
 
-                  {/* بخش تصویر */}
                   <div className="flex-1 w-full flex justify-center items-center">
                     <div className="relative w-[365px] h-[269px] max-w-full flex items-center justify-center shrink-0">
                       <img 
@@ -165,7 +165,7 @@ export default function CoursesSlider() {
         .courses-swiper .swiper-pagination-bullet-active {
           width: 32px;
           border-radius: 9999px;
-          background-color: #00C5EB !important;
+          background-color: #07687c !important; /* اعمال رنگ سازمانی روی pagination */
         }
       `}</style>
 

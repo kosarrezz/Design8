@@ -30,9 +30,9 @@ export default function PopularCategories() {
       className="flex-shrink-0 flex items-center justify-between gap-3 bg-white dark:bg-[#212121] 
                  border border-[#EAECF0] dark:border-[#333333] rounded-full 
                  px-4 py-2.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)]
-                 hover:shadow-md hover:border-[#00B4D8] dark:hover:border-[#00B4D8] transition-all cursor-pointer select-none"
+                 hover:shadow-md hover:border-[#07687c] dark:hover:border-[#07687c] transition-all cursor-pointer select-none"
     >
-      <div className="flex items-center justify-center px-2 py-0.5 rounded-lg border border-[#38BDF8] bg-[#F0F9FF] dark:bg-[#0369a1]/25 dark:border-[#0284C7] text-[#0284C7] dark:text-[#38BDF8] text-[11px] font-extrabold tracking-wide">
+      <div className="flex items-center justify-center px-2 py-0.5 rounded-lg border border-[#07687c] bg-[#07687c]/10 dark:bg-[#07687c]/20 dark:border-[#07687c] text-[#07687c] dark:text-[#a5d8e0] text-[11px] font-extrabold tracking-wide">
         API
       </div>
 

@@ -57,7 +57,7 @@ export default function RoadmapSection() {
       dir="rtl" 
       className="w-full py-16 px-4 md:px-8 select-none bg-white dark:bg-[#212121] transition-colors duration-200"
     >
-      <div className="max-w-[1240px] mx-auto cursor-pointer">
+      <div className="max-w-[1240px] mx-auto">
         <div className="flex flex-col items-center justify-center text-center mb-16 md:mb-24">
           <div className="relative inline-block">
             <img

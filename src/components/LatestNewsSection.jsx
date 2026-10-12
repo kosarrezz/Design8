@@ -48,7 +48,7 @@ export default function LatestNewsSection() {
             </h2>
 
             <svg
-              className="absolute bottom-0 left-0 w-full h-[14px] text-[#00bcd4] -translate-y-1"
+              className="absolute bottom-0 left-0 w-full h-[14px] text-[#07687c] -translate-y-1"
               viewBox="0 0 220 20"
               fill="none"
               preserveAspectRatio="none"
@@ -74,8 +74,8 @@ export default function LatestNewsSection() {
                 onClick={() => setActiveTab(idx)}
                 className={`rounded-full px-5 py-1.5 text-[12px] font-medium transition-all duration-200 cursor-pointer ${
                   activeTab === idx
-                    ? "bg-[#00bcd4] text-white border border-[#00bcd4] shadow-sm"
-                    : "border border-[#00bcd4] text-[#00bcd4] bg-white hover:bg-[#00bcd4]/10 dark:bg-transparent dark:text-[#00bcd4]"
+                    ? "bg-[#07687c] text-white border border-[#07687c] shadow-sm"
+                    : "border border-[#07687c] text-[#07687c] bg-white hover:bg-[#07687c]/10 dark:bg-transparent dark:text-[#07687c]"
                 }`}
               >
                 {cat}
@@ -125,7 +125,7 @@ export default function LatestNewsSection() {
 
         <Button
           radius="full"
-          className="rounded-full bg-[#00bcd4] px-8 py-3 text-[14px] font-bold text-white shadow-md transition-all hover:bg-[#00acc1] cursor-pointer"
+          className="rounded-full bg-[#07687c] px-8 py-3 text-[14px] font-bold text-white shadow-md transition-all hover:bg-[#065a6b] cursor-pointer"
         >
           دوست داری بیشتر ببینی
         </Button>

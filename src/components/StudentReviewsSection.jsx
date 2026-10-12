@@ -62,13 +62,13 @@ export default function StudentReviewsSection() {
   return (
     <section
       dir="rtl"
-      className="cursor-pointer w-full py-20 bg-[#F9FAFB] dark:bg-[#2E2E2E] overflow-hidden transition-colors duration-200"
+      className="w-full py-20 bg-[#F9FAFB] dark:bg-[#2E2E2E] overflow-hidden transition-colors duration-200"
     >
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-12">
         
         <div className="lg:w-5/12 w-full text-right select-none">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-[#0284C7] dark:text-[#38BDF8] text-[14px] font-bold">
+            <span className="text-[#07687c] dark:text-[#a5d8e0] text-[14px] font-bold">
               نظرات دانشجویان
             </span>
 
@@ -76,7 +76,7 @@ export default function StudentReviewsSection() {
               <button
                 onClick={handlePrevSlide}
                 aria-label="نظر قبلی"
-                className="w-9 h-9 rounded-full border border-gray-200 dark:border-[#333333] flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#0284C7] hover:text-white hover:border-[#0284C7] dark:hover:bg-[#0284C7] dark:hover:border-[#0284C7] transition-all cursor-pointer"
+                className="w-9 h-9 rounded-full border border-gray-200 dark:border-[#333333] flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#07687c] hover:text-white hover:border-[#07687c] dark:hover:bg-[#07687c] dark:hover:border-[#07687c] transition-all cursor-pointer"
               >
                 <ArrowRight02Icon size={18} />
               </button>
@@ -84,7 +84,7 @@ export default function StudentReviewsSection() {
               <button
                 onClick={handleNextSlide}
                 aria-label="نظر بعدی"
-                className="w-9 h-9 rounded-full border border-gray-200 dark:border-[#333333] flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#0284C7] hover:text-white hover:border-[#0284C7] dark:hover:bg-[#0284C7] dark:hover:border-[#0284C7] transition-all cursor-pointer"
+                className="w-9 h-9 rounded-full border border-gray-200 dark:border-[#333333] flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[#07687c] hover:text-white hover:border-[#07687c] dark:hover:bg-[#07687c] dark:hover:border-[#07687c] transition-all cursor-pointer"
               >
                 <ArrowLeft02Icon size={18} />
               </button>
@@ -144,7 +144,7 @@ export default function StudentReviewsSection() {
                   <div
                     className={`transition-all duration-300 rounded-[24px] p-8 flex flex-col justify-between bg-white dark:bg-[#212121] border ${
                       isActive
-                        ? "scale-100 opacity-100 shadow-xl border-[#0284C7] dark:border-[#0284C7]"
+                        ? "scale-100 opacity-100 shadow-xl border-[#07687c] dark:border-[#07687c]"
                         : "scale-95 opacity-40 blur-[0.4px] border-[#EAECF0] dark:border-[#333333]"
                     }`}
                     style={{ minHeight: "320px" }}

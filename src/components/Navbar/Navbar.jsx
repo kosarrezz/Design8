@@ -64,7 +64,7 @@ function Navbar() {
             <li key={link.id}>
               <a
                 href={link.href}
-                className="text-gray-700 dark:text-gray-200 hover:text-[#0CBDE2] dark:hover:text-[#0CBDE2] text-sm transition-colors"
+                className="text-gray-700 dark:text-gray-200 hover:text-[#07687c] dark:hover:text-[#07687c] text-sm transition-colors"
               >
                 {link.title}
               </a>
@@ -87,9 +87,10 @@ function Navbar() {
             )}
           </button>
 
+          {/* تغییر رنگ دکمه به رنگ سازمانی جدید */}
           <button
             type="button"
-            className="bg-[#0CBDE2] dark:bg-[#07687C] text-white h-9 sm:h-10 px-4 sm:px-6 rounded-full text-xs lg:text-sm flex items-center gap-2 whitespace-nowrap transition-colors"
+            className="bg-[#07687c] hover:bg-[#065a6b] text-white h-9 sm:h-10 px-4 sm:px-6 rounded-full text-xs lg:text-sm flex items-center gap-2 whitespace-nowrap transition-colors"
           >
             ورود یا ثبت نام
           </button>
@@ -118,7 +119,7 @@ function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-sm text-gray-700 dark:text-gray-200 hover:text-[#0CBDE2] dark:hover:text-[#0CBDE2] transition-colors"
+                  className="block text-sm text-gray-700 dark:text-gray-200 hover:text-[#07687c] dark:hover:text-[#07687c] transition-colors"
                 >
                   {link.title}
                 </a>
