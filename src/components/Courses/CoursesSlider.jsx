@@ -44,7 +44,6 @@ export default function CoursesSlider() {
   return (
     <section className="cursor-pointer w-full max-w-[1240px] mx-auto pt-4 pb-12 px-4 select-none bg-transparent">
       
-      {/* هدر بخش */}
       <div className="flex flex-col items-center justify-center text-center mb-8" dir="rtl">
         <div className="relative inline-block pb-3">
           <h2 className="text-[28px] md:text-[34px] font-black text-[#101828] dark:text-white relative z-10 leading-tight">
@@ -61,7 +60,6 @@ export default function CoursesSlider() {
         </p>
       </div>
 
-      {/* اسلایدر دسکتاپ */}
       <div className="hidden md:block">
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -79,7 +77,6 @@ export default function CoursesSlider() {
                   className="flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-24"
                   style={{ direction: "ltr" }}
                 >
-                  {/* محتوای متنی */}
                   <div 
                     className="flex-1 w-full max-w-[500px] flex flex-col justify-start"
                     style={{ direction: "rtl", textAlign: "right" }}
@@ -95,7 +92,6 @@ export default function CoursesSlider() {
 
                     <div>
                       <div className="flex items-center gap-3 mb-6 flex-wrap">
-                        {/* قیمت خط‌خورده و بج تخفیف */}
                         <div 
                           className="h-11 pr-4 pl-1 rounded-full flex items-center justify-between gap-3 font-semibold text-[14px]"
                           style={{ backgroundColor: "#FFB6B6" }}
@@ -108,7 +104,6 @@ export default function CoursesSlider() {
                           </span>
                         </div>
 
-                        {/* قیمت نهایی سبز */}
                         <div className="h-11 bg-[#D1FADF] dark:bg-[#064e3b]/50 text-[#039855] dark:text-[#34d399] px-5 rounded-full font-bold text-[15px] flex items-center justify-center">
                           {course.priceGreen}
                         </div>
@@ -150,7 +145,6 @@ export default function CoursesSlider() {
         </Swiper>
       </div>
 
-      {/* نسخه موبایل */}
       <div className="flex flex-col gap-6 md:hidden px-2">
         {courses.map((course) => (
           <CourseMobileCard key={course.id} course={course} />

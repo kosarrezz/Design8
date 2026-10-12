@@ -27,7 +27,7 @@ export default function CourseMobileCard() {
         </p>
 
         <div className="flex items-center justify-between mb-4">
-          <div className="bg-[#48CAE4] dark:bg-[#0096C7] text-white px-3 py-1.5 rounded-[12px] flex items-center gap-1.5 shadow-sm">
+          <div className="bg-[#48CAE4] dark:bg-[#07687c] text-white px-3 py-1.5 rounded-[12px] flex items-center gap-1.5 shadow-sm">
             <span className="text-[13px] font-bold tracking-tight">
               دکتر بحرالعلومی
             </span>
@@ -70,7 +70,7 @@ export default function CourseMobileCard() {
             </span>
           </div>
 
-          <div className="bg-[#F0F9FF] dark:bg-[#0C4A6E]/40 text-[#0284C7] dark:text-[#38BDF8] px-2.5 py-1 rounded-[10px] text-[13px] font-bold flex items-center gap-1 shrink-0">
+          <div className="bg-[#F0F9FF] dark:bg-[#0C4A6E]/40 text-[#0284C7] dark:text-[#07687c] px-2.5 py-1 rounded-[10px] text-[13px] font-bold flex items-center gap-1 shrink-0">
             <span>22</span>
             <HugeiconsIcon icon={IdCardIcon} size={18} strokeWidth={2} />
           </div>
