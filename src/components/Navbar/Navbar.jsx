@@ -43,8 +43,11 @@ function Navbar() {
   }
 
   return (
-    <header className="bg-white dark:bg-[#2E2E2E] rounded-2xl shadow-lg shadow-gray-200/50 dark:shadow-none mx-2 sm:mx-4 mt-3 px-3 sm:px-5 lg:px-8 py-2 transition-colors duration-200">
-      <div className="max-w-[1320px] h-[52px] sm:h-[60px] mx-auto flex items-center justify-between font-bold">
+<header className="sticky top-3 z-50 bg-white dark:bg-[#2E2E2E] 
+rounded-2xl shadow-lg shadow-gray-200/50 dark:shadow-none mx-2 sm:mx-4
+ mt-3 px-3 sm:px-5 lg:px-8 py-2 transition-colors duration-200">
+  
+     <div className="max-w-[1320px] h-[52px] sm:h-[60px] mx-auto flex items-center justify-between font-bold">
 
         <div className="flex items-center gap-3 shrink-0">
           <img
