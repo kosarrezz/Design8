@@ -1,29 +1,12 @@
-import React from "react";
-import Navbar from "./components/Navbar/Navbar"; 
-import Hero from "./components/Hero/Hero";    
-import CoursesSlider from "./components/Courses/CoursesSlider"; 
-import TopInstructors from "./components/TopInstructors";
-import WhyUsSection from "./components/WhyUsSection";
-import RoadmapSection from "./components/RoadmapSection";
-import BestCoursesSection from "./components/BestCoursesSection/BestCoursesSection";
-import PopularCategories from "./components/PopularCategories";
-import StudentReviewsSection from "./components/StudentReviewsSection";
-import LatestNewsSection from "./components/LatestNewsSection";
-import Footer from "./Footer";
+import Navbar from './components/layout/Navbar/Navbar'; 
+import Footer from './components/layout/Footer';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div dir="rtl" className="min-h-screen bg-white dark:bg-[#212121] transition-colors duration-300">
+    <div className="min-h-screen flex flex-col font-sans" dir="rtl">
       <Navbar />
-      <Hero />
-      <CoursesSlider />
-      <TopInstructors />
-      <WhyUsSection />
-      <RoadmapSection />
-      <BestCoursesSection />
-      <PopularCategories />
-      <StudentReviewsSection />
-      <LatestNewsSection />
+      <Home />
       <Footer />
     </div>
   );
